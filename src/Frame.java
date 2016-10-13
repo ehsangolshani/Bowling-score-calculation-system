@@ -17,10 +17,11 @@ public class Frame {
 
     protected boolean haveStrike() {
         return rolls.get(0).haveStrike();
+
     }
 
     protected boolean haveSpare() {
-        return rolls.size() > 1 && sumOfAttempts() >= gameRuleSpec.getPinsNumber();
+        return rolls.size() > 1 && sumOfAttempts() >= gameRuleSpec.getPinsNumber() && !haveStrike();
     }
 
     protected boolean canHaveAttempt() {

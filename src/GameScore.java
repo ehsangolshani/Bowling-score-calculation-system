@@ -18,11 +18,11 @@ public class GameScore {
                         break;
                     case SPARE:
                         if (!game.isLastFrame(i)) totalScore += frame.sumOfAttempts() + calcSpareAward(game, i);
-                        else totalScore += calcLastFrameScore(frame);
+                        else totalScore += calcLastFrameScore(frame, game.getGameRule());
                         break;
                     case STRIKE:
                         if (!game.isLastFrame(i)) totalScore += frame.sumOfAttempts() + calcStrikeAward(game, i);
-                        else totalScore += calcLastFrameScore(frame);
+                        else totalScore += calcLastFrameScore(frame, game.getGameRule());
                         break;
                 }
             }
@@ -30,11 +30,11 @@ public class GameScore {
         return totalScore;
     }
 
-    public int calcLastFrameScore(Frame frame) {
-        if (frame.rolls.size() == 2) {
+    public int calcLastFrameScore(Frame frame, GameRule gameRule) {
+        if (frame.rolls.size() == gameRule.getGamespec().getAttemptPerFrame()) {
             return frame.sumOfAttempts();
         } else {
-            return 2 * frame.sumOfAttempts() - 10;
+            return 2 * frame.sumOfAttempts() - gameRule.getGamespec().getPinsNumber();
         }
     }
 

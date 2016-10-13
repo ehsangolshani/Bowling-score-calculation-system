@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e18d55-3dcf-42b5-beac-350a3ac7808f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/uncle Bob Boling problem/Game.class" afterPath="$PROJECT_DIR$/out/production/uncle Bob Boling problem/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.java" afterPath="$PROJECT_DIR$/src/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frame.java" afterPath="$PROJECT_DIR$/src/Frame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameOutput.java" afterPath="$PROJECT_DIR$/src/GameOutput.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameScore.java" afterPath="$PROJECT_DIR$/src/GameScore.java" />
     </list>
     <ignored path="uncle Bob Boling problem.iws" />
@@ -28,57 +27,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="method#Game#0;class#Game#0" expanded="false" />
-                <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
-                <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
-                <element signature="method#attempt#0;class#Game#0" expanded="false" />
-                <element signature="method#calcAward#0;class#Game#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameInput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-              <folding>
-                <element signature="method#fileInput#0;class#GameInput#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameOutput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameOutput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="method#consolePreview#0;class#GameOutput#0" expanded="false" />
-                <element signature="method#filePreview#0;class#GameOutput#0" expanded="false" />
-                <element signature="method#previewFrame#0;class#GameOutput#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameScore.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameScore.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GameScore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="56" />
               <folding>
-                <element signature="method#calcLastFrameScore#0;class#GameScore#0" expanded="false" />
-                <element signature="method#calcStrikeAward#0;class#GameScore#0" expanded="false" />
                 <element signature="method#calcSpareAward#0;class#GameScore#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameRule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+              <folding>
+                <element signature="method#GameRule#0;class#GameRule#0" expanded="false" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +56,8 @@
       <file leaf-file-name="GameRuleSpec.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameRuleSpec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="126">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="method#GameRuleSpec#0;class#GameRuleSpec#0" expanded="false" />
                 <element signature="e#398#399#0" expanded="true" />
@@ -98,17 +67,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="method#Game#0;class#Game#0" expanded="false" />
+                <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
+                <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
+                <element signature="method#attempt#0;class#Game#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="306">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#565#566#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
                 <element signature="method#frameStatus#0;class#Frame#0" expanded="false" />
                 <element signature="method#sumOfAttempts#0;class#Frame#0" expanded="false" />
                 <element signature="method#addRoll#0;class#Frame#0" expanded="false" />
@@ -153,14 +133,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/RoleType.java" />
         <option value="$PROJECT_DIR$/src/ResultType.java" />
-        <option value="$PROJECT_DIR$/src/GameOutput.java" />
         <option value="$PROJECT_DIR$/src/GameInput.java" />
         <option value="$PROJECT_DIR$/src/GameRule.java" />
         <option value="$PROJECT_DIR$/src/GameRuleSpec.java" />
         <option value="$PROJECT_DIR$/src/Roll.java" />
-        <option value="$PROJECT_DIR$/src/Frame.java" />
         <option value="$PROJECT_DIR$/src/PlayTest.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
+        <option value="$PROJECT_DIR$/src/GameOutput.java" />
+        <option value="$PROJECT_DIR$/src/Frame.java" />
         <option value="$PROJECT_DIR$/src/GameScore.java" />
       </list>
     </option>
@@ -612,16 +592,16 @@
       <workItem from="1476301250861" duration="14648000" />
       <workItem from="1476347500583" duration="2438000" />
       <workItem from="1476353474943" duration="14747000" />
-      <workItem from="1476376915788" duration="4859000" />
+      <workItem from="1476376915788" duration="7991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63140000" />
+    <option name="totallyTimeSpent" value="66272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1337" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -687,8 +667,6 @@
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="method#calcLastFrameScore#0;class#GameScore#0" expanded="false" />
-            <element signature="method#calcStrikeAward#0;class#GameScore#0" expanded="false" />
             <element signature="method#calcSpareAward#0;class#GameScore#0" expanded="false" />
           </folding>
         </state>
@@ -713,7 +691,6 @@
             <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#attempt#0;class#Game#0" expanded="false" />
-            <element signature="method#calcAward#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -736,8 +713,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#frameStatus#0;class#Frame#0" expanded="false" />
             <element signature="method#sumOfAttempts#0;class#Frame#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -779,8 +756,6 @@
         <state relative-caret-position="576">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="method#calcLastFrameScore#0;class#GameScore#0" expanded="false" />
-            <element signature="method#calcStrikeAward#0;class#GameScore#0" expanded="false" />
             <element signature="method#calcSpareAward#0;class#GameScore#0" expanded="false" />
           </folding>
         </state>
@@ -794,8 +769,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#frameStatus#0;class#Frame#0" expanded="false" />
             <element signature="method#sumOfAttempts#0;class#Frame#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,7 +796,6 @@
             <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#attempt#0;class#Game#0" expanded="false" />
-            <element signature="method#calcAward#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -873,8 +847,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#calcLastFrameScore#0;class#GameScore#0" expanded="false" />
-            <element signature="method#calcStrikeAward#0;class#GameScore#0" expanded="false" />
             <element signature="method#calcSpareAward#0;class#GameScore#0" expanded="false" />
           </folding>
         </state>
@@ -889,7 +861,6 @@
             <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#attempt#0;class#Game#0" expanded="false" />
-            <element signature="method#calcAward#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -902,8 +873,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#frameStatus#0;class#Frame#0" expanded="false" />
             <element signature="method#sumOfAttempts#0;class#Frame#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1007,7 +978,6 @@
             <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#attempt#0;class#Game#0" expanded="false" />
-            <element signature="method#calcAward#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1064,7 +1034,6 @@
             <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#attempt#0;class#Game#0" expanded="false" />
-            <element signature="method#calcAward#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1078,7 +1047,6 @@
             <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#attempt#0;class#Game#0" expanded="false" />
-            <element signature="method#calcAward#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,8 +1079,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#frameStatus#0;class#Frame#0" expanded="false" />
             <element signature="method#sumOfAttempts#0;class#Frame#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1132,16 +1100,6 @@
             <element signature="method#Roll#0;class#Roll#0" expanded="false" />
             <element signature="e#395#396#0" expanded="true" />
             <element signature="e#426#427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="method#GameRule#0;class#GameRule#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1174,35 +1132,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="method#frameStatus#0;class#Frame#0" expanded="false" />
-            <element signature="method#sumOfAttempts#0;class#Frame#0" expanded="false" />
-            <element signature="method#addRoll#0;class#Frame#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameOutput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="method#consolePreview#0;class#GameOutput#0" expanded="false" />
-            <element signature="method#filePreview#0;class#GameOutput#0" expanded="false" />
-            <element signature="method#previewFrame#0;class#GameOutput#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1213,10 +1142,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="method#consolePreview#0;class#GameOutput#0" expanded="false" />
+            <element signature="method#filePreview#0;class#GameOutput#0" expanded="false" />
+            <element signature="method#previewFrame#0;class#GameOutput#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#frameStatus#0;class#Frame#0" expanded="false" />
+            <element signature="method#sumOfAttempts#0;class#Frame#0" expanded="false" />
+            <element signature="method#addRoll#0;class#Frame#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="method#GameRule#0;class#GameRule#0" expanded="false" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GameRuleSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="126">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="method#GameRuleSpec#0;class#GameRuleSpec#0" expanded="false" />
             <element signature="e#398#399#0" expanded="true" />
@@ -1225,28 +1191,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="method#calcLastFrameScore#0;class#GameScore#0" expanded="false" />
-            <element signature="method#calcStrikeAward#0;class#GameScore#0" expanded="false" />
-            <element signature="method#calcSpareAward#0;class#GameScore#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="method#Game#0;class#Game#0" expanded="false" />
             <element signature="method#isEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#handleEndOfFrame#0;class#Game#0" expanded="false" />
             <element signature="method#attempt#0;class#Game#0" expanded="false" />
-            <element signature="method#calcAward#0;class#Game#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameScore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="56" />
+          <folding>
+            <element signature="method#calcSpareAward#0;class#GameScore#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -18,7 +18,6 @@ public class GameOutput {
 
     }
 
-
     public String previewFrame(Frame frame) {
         String frameString = "";
         for (Roll roll : frame.rolls) {
