@@ -7,11 +7,14 @@ public class GameInput {
 
     Scanner scanner;
 
-    public void consoleInput(Game game) {
+    public GameInput() {
         scanner = new Scanner(System.in);
+    }
+
+    public void consoleInput(Game game) {
         System.out.println("hey, throw ball !");
         System.out.println("finish game with entering a non-numerical character !");
-        while (scanner.hasNextInt()) {
+        while (scanner.hasNextInt() && !game.isGameFinished()) {
             game.attempt(scanner.nextInt());
         }
     }
