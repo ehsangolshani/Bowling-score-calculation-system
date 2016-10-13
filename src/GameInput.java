@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class GameInput {
 
-    Scanner scanner;
+    private Scanner scanner;
 
     public GameInput() {
         scanner = new Scanner(System.in);
@@ -17,10 +17,6 @@ public class GameInput {
         while (scanner.hasNextInt() && !game.isGameFinished()) {
             game.attempt(scanner.nextInt());
         }
-    }
-
-    public void fileInput(Game game) {
-
     }
 
 }

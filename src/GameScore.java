@@ -30,7 +30,7 @@ public class GameScore {
         return totalScore;
     }
 
-    public int calcLastFrameScore(Frame frame, GameRule gameRule) {
+    private int calcLastFrameScore(Frame frame, GameRule gameRule) {
         if (frame.rolls.size() == gameRule.getGamespec().getAttemptPerFrame()) {
             return frame.sumOfAttempts();
         } else {
@@ -38,11 +38,11 @@ public class GameScore {
         }
     }
 
-    public int calcStrikeAward(Game game, int index) {
+    private int calcStrikeAward(Game game, int index) {
         return game.calcAward(index, game.getGameRule().getStrikeAward());
     }
 
-    public int calcSpareAward(Game game, int index) {
+    private int calcSpareAward(Game game, int index) {
         return game.calcAward(index, game.getGameRule().getSpareAward());
     }
 

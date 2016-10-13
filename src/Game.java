@@ -18,10 +18,6 @@ public class Game {
         return index == gameRule.getMainFramesNumber() - 1;
     }
 
-    private void goToNextFrame() {
-        gameFrames.add(new Frame(gameRule.getGamespec()));
-    }
-
     private boolean isEndOfFrame(ResultType attemptResult, Frame currentFrame) {
         return (!currentFrame.canHaveAttempt() || attemptResult.equals(ResultType.SPARE) ||
                 attemptResult.equals(ResultType.STRIKE));
@@ -42,6 +38,10 @@ public class Game {
         }
     }
 
+    private void goToNextFrame() {
+        gameFrames.add(new Frame(gameRule.getGamespec()));
+    }
+
     protected ResultType attempt(int hit) {
         ResultType attemptResult = null;
         if (!isGameFinished()) {
@@ -56,11 +56,11 @@ public class Game {
         return gameFinished;
     }
 
-    public void finishGame() {
+    protected void finishGame() {
         this.gameFinished = true;
     }
 
-    public int calcAward(int index, int limit) {
+    protected int calcAward(int index, int limit) {
         int counter = 0;
         int award = 0;
 
@@ -74,11 +74,11 @@ public class Game {
         return award;
     }
 
-    public ArrayList<Frame> getGameFrames() {
+    protected ArrayList<Frame> getGameFrames() {
         return gameFrames;
     }
 
-    public GameRule getGameRule() {
+    protected GameRule getGameRule() {
         return gameRule;
     }
 

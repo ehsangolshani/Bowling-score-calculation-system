@@ -17,7 +17,6 @@ public class Frame {
 
     protected boolean haveStrike() {
         return rolls.get(0).haveStrike();
-
     }
 
     protected boolean haveSpare() {
@@ -40,20 +39,20 @@ public class Frame {
         return sum;
     }
 
-    protected boolean haveAwards() {
-        return awardNumbers > 0;
-    }
-
     protected ResultType addRoll(int hit) {
         rolls.add(new Roll(gameRuleSpec, hit));
         return frameStatus();
     }
 
-    public void decrementAward() {
+    protected boolean haveAwards() {
+        return awardNumbers > 0;
+    }
+
+    protected void decrementAward() {
         this.awardNumbers--;
     }
 
-    public void setAwardNumbers(int awardNumbers) {
+    protected void setAwardNumbers(int awardNumbers) {
         this.awardNumbers = awardNumbers;
     }
 
