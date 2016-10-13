@@ -14,24 +14,20 @@ public class GameScore {
                 Frame frame = frames.get(i);
                 switch (frame.frameStatus()) {
                     case MISS:
-                        totalScore += calcFrameScore(frame);
+                        totalScore += frame.sumOfAttempts();
                         break;
                     case SPARE:
-                        if (!game.isLastFrame(i)) totalScore += calcFrameScore(frame) + calcSpareAward(game, i);
+                        if (!game.isLastFrame(i)) totalScore += frame.sumOfAttempts() + calcSpareAward(game, i);
                         else totalScore += calcLastFrameScore(frame);
                         break;
                     case STRIKE:
-                        if (!game.isLastFrame(i)) totalScore += calcFrameScore(frame) + calcStrikeAward(game, i);
+                        if (!game.isLastFrame(i)) totalScore += frame.sumOfAttempts() + calcStrikeAward(game, i);
                         else totalScore += calcLastFrameScore(frame);
                         break;
                 }
             }
         }
         return totalScore;
-    }
-
-    public int calcFrameScore(Frame frame) {
-        return frame.sumOfAttempts();
     }
 
     public int calcLastFrameScore(Frame frame) {
@@ -49,6 +45,5 @@ public class GameScore {
     public int calcSpareAward(Game game, int index) {
         return game.calcAward(index, game.getGameRule().getSpareAward());
     }
-
 
 }

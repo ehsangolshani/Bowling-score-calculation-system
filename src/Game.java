@@ -14,30 +14,22 @@ public class Game {
         gameFrames.add(new Frame(gameRule.getGamespec()));
     }
 
-    protected boolean isLastFrame() {
-        return gameFrames.size() == gameRule.getMainFramesNumber();
-    }
-
     protected boolean isLastFrame(int index) {
         return index == gameRule.getMainFramesNumber() - 1;
     }
 
-    protected void goToNextFrame() {
+    private void goToNextFrame() {
         gameFrames.add(new Frame(gameRule.getGamespec()));
     }
 
-    protected boolean haveSpareOrStrike(ResultType attemptResult) {
-        return attemptResult.equals(ResultType.SPARE) ||
-                attemptResult.equals(ResultType.STRIKE);
-    }
-
-    protected boolean isEndOfFrame(ResultType attemptResult, Frame currentFrame) {
-        return (!currentFrame.canHaveAttempt() || haveSpareOrStrike(attemptResult));
+    private boolean isEndOfFrame(ResultType attemptResult, Frame currentFrame) {
+        return (!currentFrame.canHaveAttempt() || attemptResult.equals(ResultType.SPARE) ||
+                attemptResult.equals(ResultType.STRIKE));
     }
 
     private void handleEndOfFrame(Frame frame, ResultType attemptResult) {
         if (isEndOfFrame(attemptResult, frame)) {
-            if (!isLastFrame()) {
+            if (!isLastFrame(gameFrames.indexOf(frame))) {
                 goToNextFrame();
             } else if (!frame.haveAwards()) {
                 if (frame.haveStrike()) frame.setAwardNumbers(gameRule.getStrikeAward());
@@ -85,7 +77,6 @@ public class Game {
     public ArrayList<Frame> getGameFrames() {
         return gameFrames;
     }
-
 
     public GameRule getGameRule() {
         return gameRule;
