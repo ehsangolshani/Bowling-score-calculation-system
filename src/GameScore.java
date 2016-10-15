@@ -18,11 +18,11 @@ public class GameScore {
                         break;
                     case SPARE:
                         if (!game.isLastFrame(i)) totalScore += frame.sumOfAttempts() + calcSpareAward(game, i);
-                        else totalScore += calcLastFrameScore(frame, game.getGameRule());
+                        else totalScore += calcLastFrameScore(frame, game.getRule());
                         break;
                     case STRIKE:
                         if (!game.isLastFrame(i)) totalScore += frame.sumOfAttempts() + calcStrikeAward(game, i);
-                        else totalScore += calcLastFrameScore(frame, game.getGameRule());
+                        else totalScore += calcLastFrameScore(frame, game.getRule());
                         break;
                 }
             }
@@ -30,20 +30,20 @@ public class GameScore {
         return totalScore;
     }
 
-    private int calcLastFrameScore(Frame frame, GameRule gameRule) {
-        if (frame.rolls.size() == gameRule.getGamespec().getAttemptPerFrame()) {
+    private int calcLastFrameScore(Frame frame, Rule rule) {
+        if (frame.rolls.size() == rule.getGamespec().getAttemptPerFrame()) {
             return frame.sumOfAttempts();
         } else {
-            return 2 * frame.sumOfAttempts() - gameRule.getGamespec().getPinsNumber();
+            return 2 * frame.sumOfAttempts() - rule.getGamespec().getPinsNumber();
         }
     }
 
     private int calcStrikeAward(Game game, int index) {
-        return game.calcAward(index, game.getGameRule().getStrikeAward());
+        return game.calcAward(index, game.getRule().getStrikeAward());
     }
 
     private int calcSpareAward(Game game, int index) {
-        return game.calcAward(index, game.getGameRule().getSpareAward());
+        return game.calcAward(index, game.getRule().getSpareAward());
     }
 
 }

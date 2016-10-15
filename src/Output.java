@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by ehsangolshani on 10/9/16.
  */
-public class GameOutput {
+public class Output {
 
     public void consolePreview(Game game, GameScore scoreHandler) {
         for (Frame frame : game.getGameFrames()) {

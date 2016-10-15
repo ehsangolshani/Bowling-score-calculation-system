@@ -1,12 +1,12 @@
 /**
  * Created by ehsangolshani on 10/9/16.
  */
-public class GameRuleSpec {
+public class RuleSpec {
 
     private int pinsNumber;
     private int attemptPerFrame;
 
-    public GameRuleSpec(int pinsNumber, int attemptPerFrame) {
+    public RuleSpec(int pinsNumber, int attemptPerFrame) {
         this.pinsNumber = pinsNumber;
         this.attemptPerFrame = attemptPerFrame;
     }

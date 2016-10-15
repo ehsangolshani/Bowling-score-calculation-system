@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -9,10 +8,10 @@ public class Frame {
 
     private int awardNumbers;
     public List<Roll> rolls = new ArrayList<>();
-    GameRuleSpec gameRuleSpec;
+    RuleSpec ruleSpec;
 
-    public Frame(GameRuleSpec gameRuleSpec) {
-        this.gameRuleSpec = gameRuleSpec;
+    public Frame(RuleSpec ruleSpec) {
+        this.ruleSpec = ruleSpec;
     }
 
     protected boolean haveStrike() {
@@ -20,11 +19,11 @@ public class Frame {
     }
 
     protected boolean haveSpare() {
-        return rolls.size() > 1 && sumOfAttempts() >= gameRuleSpec.getPinsNumber() && !haveStrike();
+        return rolls.size() > 1 && sumOfAttempts() >= ruleSpec.getPinsNumber() && !haveStrike();
     }
 
     protected boolean canHaveAttempt() {
-        return rolls.size() < gameRuleSpec.getAttemptPerFrame();
+        return rolls.size() < ruleSpec.getAttemptPerFrame();
     }
 
     protected ResultType frameStatus() {
@@ -40,7 +39,7 @@ public class Frame {
     }
 
     protected ResultType addRoll(int hit) {
-        rolls.add(new Roll(gameRuleSpec, hit));
+        rolls.add(new Roll(ruleSpec, hit));
         return frameStatus();
     }
 

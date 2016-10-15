@@ -3,11 +3,11 @@ import java.util.Scanner;
 /**
  * Created by ehsangolshani on 10/10/16.
  */
-public class GameInput {
+public class Input {
 
     private Scanner scanner;
 
-    public GameInput() {
+    public Input() {
         scanner = new Scanner(System.in);
     }
 

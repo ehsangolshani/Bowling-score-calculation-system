@@ -6,16 +6,16 @@ import java.util.ArrayList;
 public class Game {
 
     private ArrayList<Frame> gameFrames = new ArrayList<>();
-    private GameRule gameRule;
+    private Rule rule;
     private boolean gameFinished;
 
-    public Game(GameRule gameRule) {
-        this.gameRule = gameRule;
-        gameFrames.add(new Frame(gameRule.getGamespec()));
+    public Game(Rule rule) {
+        this.rule = rule;
+        gameFrames.add(new Frame(rule.getGamespec()));
     }
 
     protected boolean isLastFrame(int index) {
-        return index == gameRule.getMainFramesNumber() - 1;
+        return index == rule.getMainFramesNumber() - 1;
     }
 
     private boolean isEndOfFrame(ResultType attemptResult, Frame currentFrame) {
@@ -28,8 +28,8 @@ public class Game {
             if (!isLastFrame(gameFrames.indexOf(frame))) {
                 goToNextFrame();
             } else if (!frame.haveAwards()) {
-                if (frame.haveStrike()) frame.setAwardNumbers(gameRule.getStrikeAward());
-                else if (frame.haveSpare()) frame.setAwardNumbers(gameRule.getSpareAward());
+                if (frame.haveStrike()) frame.setAwardNumbers(rule.getStrikeAward());
+                else if (frame.haveSpare()) frame.setAwardNumbers(rule.getSpareAward());
                 else finishGame();
             } else {
                 frame.decrementAward();
@@ -39,7 +39,7 @@ public class Game {
     }
 
     private void goToNextFrame() {
-        gameFrames.add(new Frame(gameRule.getGamespec()));
+        gameFrames.add(new Frame(rule.getGamespec()));
     }
 
     protected ResultType attempt(int hit) {
@@ -78,8 +78,8 @@ public class Game {
         return gameFrames;
     }
 
-    protected GameRule getGameRule() {
-        return gameRule;
+    protected Rule getRule() {
+        return rule;
     }
 
 }

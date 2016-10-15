@@ -1,14 +1,14 @@
 /**
  * Created by ehsangolshani on 10/9/16.
  */
-public class GameRule {
+public class Rule {
 
-    private GameRuleSpec gamespec;
+    private RuleSpec gamespec;
     private int strikeAward;
     private int spareAward;
     private int mainFramesNumber;
 
-    public GameRule(GameRuleSpec gamespec, int strikeAward, int spareAward, int mainFramesNumber) {
+    public Rule(RuleSpec gamespec, int strikeAward, int spareAward, int mainFramesNumber) {
         this.gamespec = gamespec;
         this.strikeAward = strikeAward;
         this.spareAward = spareAward;
@@ -27,7 +27,7 @@ public class GameRule {
         return strikeAward;
     }
 
-    public GameRuleSpec getGamespec() {
+    public RuleSpec getGamespec() {
         return gamespec;
     }
 }

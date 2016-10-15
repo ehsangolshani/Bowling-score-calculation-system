@@ -4,15 +4,15 @@
 public class Roll {
 
     private int rollPins;
-    GameRuleSpec gameRuleSpec;
+    RuleSpec ruleSpec;
 
-    public Roll(GameRuleSpec gameRuleSpec, int rollPins) {
-        this.gameRuleSpec = gameRuleSpec;
+    public Roll(RuleSpec ruleSpec, int rollPins) {
+        this.ruleSpec = ruleSpec;
         this.rollPins = rollPins;
     }
 
     protected boolean haveStrike() {
-        return rollPins == gameRuleSpec.getPinsNumber();
+        return rollPins == ruleSpec.getPinsNumber();
     }
 
     public int getPins() {
